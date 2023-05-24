@@ -1,0 +1,160 @@
+:root{
+    --gradiente: red;
+    --padding-section: 5vh 3vw;
+}
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #232323;
+    padding: 0;
+    color: #FFFFFF;
+}
+/* estilos del header */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 3vw;
+}
+.links >a {
+    text-decoration: none;
+    padding: 2px 0;
+}
+.color-magico{
+    color: var(--gradiente);
+}
+.links-y-carro{
+    display: flex;
+    flex-basis: 30%;
+    justify-content: space-between;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+}
+
+/* estilos hero */
+.hero{
+    padding: var(--padding-section);
+    display: flex;
+    flex-direction: column;
+}
+.shop-now{
+    display: flex;
+    justify-content: space-between;
+}
+.imagenes{
+    text-align: center;
+}
+.shop-now>p{
+    width: 15vw;
+}
+
+button{
+    width: 150px;
+    height: fit-content;
+    padding: 1vh 1.5vw;
+    text-align: left;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--gradiente);   
+}
+
+/* estilos Shop */
+
+.shop{
+    padding: var(--padding-section);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.galeria-imagenes{
+    display: flex;
+    gap: 10px;
+}
+
+/* estilos Explore collections */
+
+.explore{
+    padding: var(--padding-section);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--gradiente);
+}
+.explore > * {
+    background-color: var(--gradiente);
+}
+.card2{
+    background-color: var(--gradiente);
+}
+.fotos-colecciones{
+    display: flex;
+    gap: 10px;
+}
+
+/* estilos About Us */
+
+.about{
+    padding: 5vh 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.about-foto{
+    flex-basis: 50%;
+    text-align: center;
+    height: 70vh;
+}
+.about-us{
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    align-items: center;
+    justify-content: center;
+}
+hr{
+    margin: var(--padding-section);
+}
+
+/* estilos del contact */
+.contact{
+    padding: var(--padding-section);
+    display: flex;
+    gap:5vw
+}
+
+/* estilos footer */
+
+footer{
+    padding: var(--padding-section);
+    display: flex;
+    justify-content: space-between;
+}
+footer > div{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+.padding-footer-titulos{
+    padding: 0 0 2vh 0;
+}
+
+input{
+    width: 150px;
+    height: fit-content;
+    padding: 1vh 1.5vw;
+    text-align: left;
+    border-radius: 50px;
+    border: 1px solid white;
+}
+/* estilos copyright */
+.copyright{
+    padding: var(--padding-section);
+    display: flex;
+    justify-content: space-between;
+}
+h4{
+    align-self: flex-end;
+    justify-self: flex-end;
+}
