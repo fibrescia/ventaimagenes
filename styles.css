@@ -1,110 +1,293 @@
+/* ------ GLOBALES ------ */
+
 :root{
-    --gradiente: red;
     --padding-section: 5vh 3vw;
+    --color-magico:linear-gradient(to bottom right,
+    #A9F6AD, #ECF6A9, #A9DBF6, #A9F6E8);
 }
+  
 *{
     padding: 0;
     margin: 0;
     background-color: #232323;
-    padding: 0;
+    font-family: 'Krub', sans-serif;
     color: #FFFFFF;
 }
-/* estilos del header */
-nav{
+ 
+span{
+    font-style: italic;
+    background: none;
+}
+ 
+a{
+    text-decoration: none;
+    padding: 2px 0;
+}
+ 
+ul{
+    list-style: none;
+}
+
+li{
+    padding-bottom: 1rem;
+}
+ 
+p{
+    color: #FFFFFF;
+}
+ 
+input{
+    width: 200px;
+    height: fit-content;
+    padding: 1vh 1.5vw;
+    text-align: left;
+    border-radius: 50px;
+    border: 1px solid #FFFFFF;
+}
+ 
+
+button{
+    background:linear-gradient(to bottom right,
+        #A9F6AD, #ECF6A9, #A9DBF6, #A9F6E8);
+    font-weight: bold;
+    color: #232323;
+}
+ 
+ 
+button:hover{
+    cursor: pointer;
+    background: #232323;
+    color: #FFFFFF;
+}
+ 
+/* button>i:hover{
+    background: none;
+    color: #FFFFFF;
+} */
+ 
+.boton-grande{
+    width: 200px;
+    height: fit-content;
+    padding: 1.5vh 1.5vw;
+    text-align: left;
+    border-radius: 50px;
+    border: none;
+    text-shadow: none;
+}
+ 
+.boton-grande:hover{
+    cursor: pointer;
+    background-color: #232323;
+}
+ 
+button>i{
+    background: none;
+    color: #232323;
+    margin-right: none;
+}
+ 
+label{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.submitButton{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    text-shadow: none;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: #232323;
+}
+ 
+/* .submitButton>i{
+    background: none;
+    color: #232323;
+} */
+
+/* ------ ESTILOS HEADER ------ */
+
+header{
+    position: sticky;
+    top:0;
     display: flex;
     justify-content: space-between;
     padding: 1vh 3vw;
 }
-.links >a {
-    text-decoration: none;
-    padding: 2px 0;
-}
-.color-magico{
-    color: var(--gradiente);
-}
-.links-y-carro{
-    display: flex;
-    flex-basis: 30%;
-    justify-content: space-between;
-}
-.links{
-    display: flex;
-    flex-direction: column;
-}
 
-/* estilos hero */
+.logo-home{
+    font-size: 1rem;
+}
+ 
+h2{
+    padding-bottom: 2rem;
+}
+ 
+/* ------ ESTILOS HERO ------ */
+
 .hero{
     padding: var(--padding-section);
     display: flex;
     flex-direction: column;
 }
-.shop-now{
+
+.imagenes-hero{
+    display: flex;  
+    text-align: center;
+    gap: 10px;
+}
+
+.carousel-hero{
+    width: 120px;
+    height: 180px;
+    background: none;
+}
+
+.carousel-hero>img{
+    width: 100%;
+    height: auto;  
+}
+  
+.titulo-hero{
+    align-self: center;
+    padding-top: 5px;
+}
+
+.shop-now-hero{
     display: flex;
     justify-content: space-between;
 }
-.imagenes{
-    text-align: center;
-}
-.shop-now>p{
+  
+.shop-now-hero>p{
     width: 15vw;
 }
-
-button{
-    width: 150px;
-    height: fit-content;
-    padding: 1vh 1.5vw;
-    text-align: left;
-    border-radius: 50px;
-    border: none;
-    background-color: var(--gradiente);   
-}
-
-/* estilos Shop */
-
-.shop{
+ 
+/* ------ ESTILOS COMPRAR POPULARES HOME ------ */
+ 
+.shop-home{
     padding: var(--padding-section);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.galeria-imagenes{
+ 
+.nombre-precio{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   
+}
+ 
+.galeria-shop{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
+ 
+.card{
+    width: 300px;
+    height: 600px;
+    background: none;
+}
+ 
+.card>img{
+    width: 100%;
+    height: auto;  
+}
 
-/* estilos Explore collections */
-
+.cardGrande{
+    width: 600px;
+    height: 600px;
+    background: none;
+}
+ 
+.cardGrande>img{
+    width: 100%;
+    height: auto;
+}
+ 
+/* ------ ESTILOS COLECCIONES HOME ------ */
+ 
 .explore{
     padding: var(--padding-section);
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--gradiente);
+    background: var(--color-magico);
 }
+
 .explore > * {
-    background-color: var(--gradiente);
+    background: none;
+    color: #232323;
 }
-.card2{
-    background-color: var(--gradiente);
+ 
+.explore-titulo>span{
+    background: none;
+    color: #232323;
 }
+  
 .fotos-colecciones{
+    width: 100%;
     display: flex;
     gap: 10px;
+    background: none;
 }
 
-/* estilos About Us */
-
+.card2{
+    background: none;
+    width: 300px;
+    height: auto;
+}
+  
+.card2>img{
+    background: none;
+    width: 100%;
+    height: auto;
+}
+  
+.titulo-coleccion-home{
+    background: none;
+    display: flex;
+    justify-content: space-between;
+   
+}
+ 
+.titulo-coleccion-home>h4{
+    background: none;
+    color: #232323;
+}
+  
+.titulo-coleccion-home>i{
+    background: none;
+    color: #232323;
+}
+ 
+/* ------ ESTILOS NOSOTRES HOME ------ */
+ 
 .about{
     padding: 5vh 10vw;
     display: flex;
     justify-content: space-between;
     align-content: center;
 }
+  
 .about-foto{
     flex-basis: 50%;
     text-align: center;
-    height: 70vh;
 }
+ 
+.about-foto>img{
+    width: 300px;
+    height: auto;
+    justify-content: center;
+    align-self: center;
+}
+ 
 .about-us{
     flex-basis: 50%;
     display: flex;
@@ -113,48 +296,79 @@ button{
     align-items: center;
     justify-content: center;
 }
-hr{
+ 
+ hr{
     margin: var(--padding-section);
 }
-
-/* estilos del contact */
+ 
+/* ------ ESTILOS CONTACTO ------ */
+ 
 .contact{
     padding: var(--padding-section);
     display: flex;
     gap:5vw
 }
-
-/* estilos footer */
-
+  
+.foto-redes{
+    position: relative;
+    width: 200px;
+    height: 240px;
+    overflow: hidden;
+}
+  
+.foto-redes>img{
+    width: 100%;
+    height: auto;
+}
+  
+.foto-redes>p{
+    background: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+  
+.email{
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    justify-content: center;
+}
+  
+/* ------ ESTILOS FOOTER ------ */
+  
 footer{
     padding: var(--padding-section);
     display: flex;
     justify-content: space-between;
 }
+  
 footer > div{
     display: flex;
     flex-direction: column;
     gap: 1vh;
 }
-.padding-footer-titulos{
-    padding: 0 0 2vh 0;
+ 
+.iconos{
+    justify-content: space-between; 
 }
-
-input{
-    width: 150px;
-    height: fit-content;
-    padding: 1vh 1.5vw;
-    text-align: left;
-    border-radius: 50px;
-    border: 1px solid white;
+  
+.iconos>h3{
+    font-size: 1.5rem;
 }
-/* estilos copyright */
-.copyright{
-    padding: var(--padding-section);
-    display: flex;
+  
+.collections-footer>h4{
+    font-size: 1rem;
+    padding-bottom: 1.5rem;
+}  
+ 
+.subscribe{
     justify-content: space-between;
 }
-h4{
-    align-self: flex-end;
-    justify-self: flex-end;
+  
+.painty-li-footer>h4{
+    font-size: 1rem;
+    padding-bottom: 1.5rem;
 }
+ 
